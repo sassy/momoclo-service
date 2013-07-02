@@ -1,6 +1,7 @@
 MomocloService::Application.routes.draw do
-  #get "top/index"
   root :to => 'top#index'
+  get "top/index"
+  get "matome/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
