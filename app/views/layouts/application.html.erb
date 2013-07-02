@@ -51,7 +51,7 @@
             <ul class="nav">
               <li><%= link_to "メンバーブログ", "/top/index"  %></li>
               <li><%= link_to "まとめブログ", "/matome/index"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
+              <li><%= link_to "Youtube", "/movie/index"  %></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -71,7 +71,7 @@
                 <li class="nav-header">Sidebar</li>
                 <li><%= link_to "メンバーブログ", "/top/index"  %></li>
                 <li><%= link_to "まとめブログ", "/matome/index"  %></li>
-                <li><%= link_to "Link3", "/path3"  %></li>
+                <li><%= link_to "Youtube", "/movie/index"  %></li>
               </ul>
             </div><!--/.well -->
           </div><!--/span-->
@@ -87,6 +87,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag params[:controller] %>
 
   </body>
 </html>

@@ -1,4 +1,6 @@
 MomocloService::Application.routes.draw do
+  get "movie/index"
+
   root :to => 'top#index'
   get "top/index"
   get "matome/index"

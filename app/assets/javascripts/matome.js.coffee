@@ -17,7 +17,6 @@ initialize = ->
             if !result.error
                 for entry in result.feed.entries
                     if !entry.title.match(/^PR/)
-                        console.log entry.title
                         index = entryArray.length
                         entryArray[index] = new Array()
                         entryArray[index][0] = Date.parse(entry.publishedDate)
