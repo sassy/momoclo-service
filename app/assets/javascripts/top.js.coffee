@@ -46,7 +46,7 @@ initialize = ->
                     entryArray.reverse()
                     for entryElem in entryArray
                         elemTitle = "<a href=" + entryElem[5]+ "><h2 class=" + entryElem[6] + ">" + entryElem[1] + "</h2></a>"
-                        elemContentSnippet = "<div>" +  entryElem[2] + "</div><br>"
+                        elemContentSnippet = "<div>" +  entryElem[2] + "</div>"
                         elemDate = "<div>"+ entryElem[3] + "</div>"
                         elemBlogTitle = "<div>" + entryElem[4] + "</div>"
                         $("#feed").append(elemTitle).append(elemContentSnippet).append(elemDate).append(elemBlogTitle)
