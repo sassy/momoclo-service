@@ -14,12 +14,12 @@ $ ->
         console.log result
         for i in result.feed.entry
             $("#movie_list").append(
-                $("<li>").append(
-                    $('<img>').attr('src', i['media$group']['media$thumbnail'][0]['url'])
-                ).append(
-                    $('<a>').attr('href', i['media$group']['media$player']['url']).append(
-                        $('<div>').text(i['media$group']['media$title']['$t'])
+                $("<li>").addClass("span4").append(
+                    $('<a>').addClass('thumbnail').attr('href', i['media$group']['media$player']['url']).append(
+                        $('<img>').attr('src', i['media$group']['media$thumbnail'][2]['url'])
                     )
+                ).append(                    
+                    $('<div>').text(i['media$group']['media$title']['$t'])
                 )
             )
     ), "json")
