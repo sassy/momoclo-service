@@ -9,7 +9,7 @@ $ ->
         "alt": "json"
         "max-results": 30
         "v":2
-
+    
     $.get(url, options, ( (result) ->
         console.log result
         for i in result.feed.entry
