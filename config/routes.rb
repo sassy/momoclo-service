@@ -1,4 +1,6 @@
 MomocloService::Application.routes.draw do
+  get "news/index"
+
   get "about/index"
 
   get "movie/index"
